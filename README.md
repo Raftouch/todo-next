@@ -1,4 +1,6 @@
 - [x] initial setup
 - [x] configure prisma w/mongodb
-- [ ] create model
+- [x] create model
+- [x] set up db
+- [ ] remove boilerplate code
 - [ ]
