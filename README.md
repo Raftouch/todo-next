@@ -2,5 +2,7 @@
 - [x] configure prisma w/mongodb
 - [x] create model
 - [x] set up db
-- [ ] remove boilerplate code
+- [x] remove boilerplate code
+- [x] add routing (?)
+- [ ] create home page
 - [ ]
