@@ -4,5 +4,5 @@
 - [x] set up db
 - [x] remove boilerplate code
 - [x] add routing (?)
-- [ ] create home page
-- [ ]
+- [x] create pages
+- [ ] fetch data w/prisma
