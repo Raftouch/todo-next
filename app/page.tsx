@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { getAllTodos } from '@/prisma/todo'
+import TodoItem from './components/TodoItem'
 
 export default async function Home() {
   const todos = await getAllTodos()
@@ -9,7 +10,7 @@ export default async function Home() {
       <header className="flex items-center justify-between">
         <h1 className="text-2xl">Todos</h1>
         <Link
-          className="border rounded-md py-2 px-4 hover:bg-slate-600"
+          className="border rounded-md py-2 px-4 hover:bg-slate-700"
           href="/new"
         >
           New
@@ -17,7 +18,7 @@ export default async function Home() {
       </header>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
+          <TodoItem key={todo.id} {...todo} />
         ))}
       </ul>
     </>
