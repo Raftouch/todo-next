@@ -3,6 +3,6 @@
 - [x] create model
 - [x] set up db
 - [x] remove boilerplate code
-- [x] add routing (?)
-- [x] create pages
+- [x] add routing
+- [ ] create pages & components
 - [ ] fetch data w/prisma
