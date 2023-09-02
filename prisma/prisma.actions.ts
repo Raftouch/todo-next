@@ -29,3 +29,9 @@ export const createTodo = async (data: FormData) => {
 
   redirect('/')
 }
+
+export const toggleTodo = async (id: string, complete: boolean) => {
+  'use server'
+
+  await prisma.todo.update({ where: { id }, data: { complete } })
+}

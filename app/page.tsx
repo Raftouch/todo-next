@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getAllTodos } from '@/prisma/prisma.actions'
+import { getAllTodos, toggleTodo } from '@/prisma/prisma.actions'
 import TodoItem from './components/TodoItem'
 
 export default async function Home() {
@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <>
-      <header className="flex items-center justify-between">
+      <header className="flex items-center justify-between mb-5">
         <h1 className="text-2xl">Todos</h1>
         <Link
           className="border rounded-md py-2 px-4 hover:bg-slate-700"
@@ -18,7 +18,7 @@ export default async function Home() {
       </header>
       <ul>
         {todos.map((todo) => (
-          <TodoItem key={todo.id} {...todo} />
+          <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo} />
         ))}
       </ul>
     </>

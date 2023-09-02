@@ -6,4 +6,4 @@
 - [x] add routing
 - [x] create pages & components
 - [x] configure server actions
-- [ ]
+- [x] create routes
