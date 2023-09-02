@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getAllTodos } from '@/prisma/todo'
+import { getAllTodos } from '@/prisma/prisma.actions'
 import TodoItem from './components/TodoItem'
 
 export default async function Home() {

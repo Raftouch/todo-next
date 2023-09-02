@@ -4,5 +4,6 @@
 - [x] set up db
 - [x] remove boilerplate code
 - [x] add routing
-- [ ] create pages & components
-- [ ] fetch data w/prisma
+- [x] create pages & components
+- [x] configure server actions
+- [ ]
